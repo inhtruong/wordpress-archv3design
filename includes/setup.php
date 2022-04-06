@@ -13,7 +13,7 @@
             );
 
             // menu support
-            register_nav_menu( 'wtk_primary_menu', __('Primary Menu','glw') );
+            register_nav_menu( 'wtk_primary_menu', __('Primary Menu','wtk') );
         }
     }
 ?>
