@@ -10,10 +10,10 @@
     <title>Web Kien Truc</title>
 
     <!-- Favicons -->
-    <link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/assets/img/favicon.png">
-    <link rel="apple-touch-icon" href="<?php echo get_template_directory_uri(); ?>/assets/img/apple-touch-icon.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="<?php echo get_template_directory_uri(); ?>/assets/img/apple-touch-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="<?php echo get_template_directory_uri(); ?>/assets/img/apple-touch-icon-114x114.png">
+    <link rel="shortcut icon" href="assets/img/favicon.png">
+    <link rel="apple-touch-icon" href="<?php echo get_template_directory_uri(); ?>assets/img/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="<?php echo get_template_directory_uri(); ?>assets/img/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="<?php echo get_template_directory_uri(); ?>assets/img/apple-touch-icon-114x114.png">
 
     <?php wp_head(); ?>
 
@@ -68,11 +68,11 @@
         <div class="container">
             <!-- YOUR LOGO HERE -->
             <div class="inner-header">
-                <!-- <a class="inner-brand" href="index.html">
-					<img class="brand-light" src="assets/img/logo-light.png" width="100" alt="">
-					<img class="brand-dark" src="assets/img/logo-dark.png" width="100" alt="">
-				</a> -->
-                <?php 
+                <a class="inner-brand" href="index.html">
+					<img class="brand-light" src="<?php echo get_template_directory_uri(); ?>/assets/img/logo-light.png" width="100" alt="">
+					<img class="brand-dark" src="<?php echo get_template_directory_uri(); ?>/assets/img/logo-dark.png" width="100" alt="">
+				</a>
+                    <!-- <?php 
                         if(is_home()) {
                             printf('
                                     <h1>
@@ -86,7 +86,7 @@
                                     </p>
                                 ', esc_url(home_url()), get_bloginfo('sitename'));
                         }
-                    ?>
+                    ?> -->
             </div>
 
             <!-- OPEN MOBILE MENU -->

@@ -243,21 +243,38 @@
 
                 <!-- WORKS GRID -->
                 <div id="works-grid" class="my-gallery works-grid works-grid-4">
+
+                    <?php
+                        if(have_posts(  )):
+                            while(have_posts(  )):
+                                the_post();
+                    ?>
                     <figure class="work-item interior">
-                        <a href="<?php echo get_template_directory_uri(); ?>/assets/img/portfolio/full/portfolio_1.jpg" data-size="1156x768">
+                        <!-- <a href="<?php echo get_template_directory_uri(); ?>/assets/img/portfolio/full/portfolio_1.jpg" data-size="1156x768"> -->
                             <div class="work-wrapper">
-                                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/portfolio/thumbs/1.jpg" alt="">
+                                <!-- <img src="<?php echo get_template_directory_uri(); ?>/assets/img/portfolio/thumbs/1.jpg" alt=""> -->
+                                <?php
+                                    the_post_thumbnail( 'grid_post_thumbnail', array(
+                                        'alt'	=> get_post_meta( get_post_thumbnail_id(get_the_ID()),
+                                        '_wp_attachment_image_alt', true)
+                                    ) );
+                                ?>
                                 <div class="work-overlay">
                                     <div class="work-caption">
-                                        <h6 class="work-title">Kitchen</h6>
-                                        <span class="work-category">Interior</span>
+                                        <h6 class="work-title"><?php the_title(); ?></h6>
+                                        <span class="work-category"><?php wkt_post_excerpt(10, get_the_ID()); ?></span>
                                     </div>
                                 </div>
                             </div>
-                        </a>
+                        <!-- </a> -->
                         <figcaption itemprop="caption description"></figcaption>
                     </figure>
-                    <figure class="work-item interior">
+                    <?php
+                            endwhile;
+                        endif;
+                    ?>
+
+                    <!-- <figure class="work-item interior">
                         <a href="<?php echo get_template_directory_uri(); ?>/assets/img/portfolio/full/portfolio_2.jpg" data-size="1156x768">
                             <div class="work-wrapper">
                                 <img src="<?php echo get_template_directory_uri(); ?>/assets/img/portfolio/thumbs/2.jpg" alt="">
@@ -298,8 +315,8 @@
                             </div>
                         </a>
                         <figcaption itemprop="caption description"></figcaption>
-                    </figure>
-                    <figure class="work-item interior">
+                    </figure> -->
+                    <!-- <figure class="work-item interior">
                         <a href="<?php echo get_template_directory_uri(); ?>/assets/img/portfolio/full/portfolio_5.jpg" data-size="1156x768">
                             <div class="work-wrapper">
                                 <img src="<?php echo get_template_directory_uri(); ?>/assets/img/portfolio/thumbs/5.jpg" alt="">
@@ -410,7 +427,7 @@
                             </div>
                         </a>
                         <figcaption itemprop="caption description"></figcaption>
-                    </figure>
+                    </figure> -->
                 </div>
                 <!-- END WORKS GRID -->
 

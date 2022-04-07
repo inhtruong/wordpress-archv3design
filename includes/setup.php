@@ -14,6 +14,16 @@
 
             // menu support
             register_nav_menu( 'wtk_primary_menu', __('Primary Menu','wtk') );
+
+            // post thumbnail
+            add_theme_support('post-thumbnails');
+            // link rs
+            add_theme_support('automatic-feed-link');
+
+            //image size
+            add_image_size('grid-post-thumbnail', 347, 260, true);
+            add_image_size('full-post-thumbnail', 1266, 841, true);
+            add_image_size('list-mini-thumbnail', 44, 44, true);
         }
     }
 ?>
