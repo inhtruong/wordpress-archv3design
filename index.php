@@ -10,7 +10,7 @@
             <ul class="slides">
 
                 <!-- SLIDE 1 -->
-                <li class="bg-black-alfa-40" style="background-image:url(assets/img/module1.jpg)">
+                <li class="bg-black-alfa-40" style="background-image:url(<?php echo get_template_directory_uri(); ?>/assets/img/module1.jpg)">
                     <!-- HERO TEXT -->
                     <div class="hero-caption">
                         <div class="hero-text">
@@ -36,7 +36,7 @@
                 <!-- END SLIDE 1 -->
 
                 <!-- SLIDE 2  -->
-                <li class="bg-black-alfa-70" style="background-image:url(assets/img/module2.jpg)">
+                <li class="bg-black-alfa-70" style="background-image:url(<?php echo get_template_directory_uri(); ?>/assets/img/module2.jpg)">
                     <!-- HERO TEXT -->
                     <div class="hero-caption">
                         <div class="hero-text">
@@ -62,7 +62,7 @@
                 <!-- END SLIDE 2 -->
 
                 <!-- SLIDE 3 -->
-                <li class="bg-black-alfa-30" style="background-image:url(assets/img/module3.jpg)">
+                <li class="bg-black-alfa-30" style="background-image:url(<?php echo get_template_directory_uri(); ?>/assets/img/module3.jpg)">
                     <!-- HERO TEXT -->
                     <div class="hero-caption">
                         <div class="hero-text">
@@ -103,7 +103,7 @@
 
                 <div class="row">
                     <div class="col-sm-12">
-                        <img class="m-b-70" src="assets/img/about.png" alt="">
+                        <img class="m-b-70" src="<?php echo get_template_directory_uri(); ?>/assets/img/about.png" alt="">
                     </div>
                 </div>
                 <!-- .row -->
@@ -122,7 +122,7 @@
         <!-- END ABOUT -->
 
         <!-- CALLOUT -->
-        <section class="module bg-black-alfa-30 parallax color-white" data-background="assets/img/callout.jpg">
+        <section class="module bg-black-alfa-30 parallax color-white" data-background="<?php echo get_template_directory_uri(); ?>/assets/img/callout.jpg">
             <div class="container">
 
                 <div class="row">
@@ -156,7 +156,7 @@
                 <div class="row">
                     <div class="col-sm-10 col-sm-offset-1">
                         <div class="text-center m-t-70 m-b-70">
-                            <img src="assets/img/services.jpg" alt="">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/services.jpg" alt="">
                         </div>
                     </div>
                 </div>
@@ -168,7 +168,7 @@
                     <div class="col-sm-4 col-md-4 col-lg-4">
                         <div class="box-icon text-center">
                             <div class="icon-box-icon">
-                                <i class="icon-camera icons"></i>
+                                <i class="fa-solid fa-camera"></i>
                             </div>
                             <h4>Photography</h4>
                             <p>Our Photography is second to none, and has been featured in local real estate publications for 5+ years.</p>
@@ -180,7 +180,7 @@
                     <div class="col-sm-4 col-md-4 col-lg-4">
                         <div class="box-icon text-center">
                             <div class="icon-box-icon">
-                                <i class="icon-map icons"></i>
+                                <i class="fa-solid fa-map"></i>
                             </div>
                             <h4>Branding</h4>
                             <p>As a real estate marketing company, we understand you, your business, and your clients. Whether your situation calls for targeted advertising, property videos, or strategic outreach to key prospects – ImageProMedia can help
@@ -193,7 +193,7 @@
                     <div class="col-sm-4 col-md-4 col-lg-4">
                         <div class="box-icon text-center">
                             <div class="icon-box-icon">
-                                <i class="icon-camrecorder icons"></i>
+                                <i class="fa-solid fa-video"></i>
                             </div>
                             <h4>Video</h4>
                             <p>Our Cinematic Video will feature all the high points on the property to get you the best results. Check out our <a href="https://www.youtube.com/playlist?list=PL2nrqixWcL4DOe6zoGHrSvtY2Ct5djeUK"></i>YouTube</a> Channel for
@@ -244,9 +244,9 @@
                 <!-- WORKS GRID -->
                 <div id="works-grid" class="my-gallery works-grid works-grid-4">
                     <figure class="work-item interior">
-                        <a href="assets/img/portfolio/full/portfolio_1.jpg" data-size="1156x768">
+                        <a href="<?php echo get_template_directory_uri(); ?>/assets/img/portfolio/full/portfolio_1.jpg" data-size="1156x768">
                             <div class="work-wrapper">
-                                <img src="assets/img/portfolio/thumbs/1.jpg" alt="">
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/portfolio/thumbs/1.jpg" alt="">
                                 <div class="work-overlay">
                                     <div class="work-caption">
                                         <h6 class="work-title">Kitchen</h6>
@@ -258,9 +258,9 @@
                         <figcaption itemprop="caption description"></figcaption>
                     </figure>
                     <figure class="work-item interior">
-                        <a href="assets/img/portfolio/full/portfolio_2.jpg" data-size="1156x768">
+                        <a href="<?php echo get_template_directory_uri(); ?>/assets/img/portfolio/full/portfolio_2.jpg" data-size="1156x768">
                             <div class="work-wrapper">
-                                <img src="assets/img/portfolio/thumbs/2.jpg" alt="">
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/portfolio/thumbs/2.jpg" alt="">
                                 <div class="work-overlay">
                                     <div class="work-caption">
                                         <h6 class="work-title">Living Room</h6>
@@ -272,9 +272,9 @@
                         <figcaption itemprop="caption description"></figcaption>
                     </figure>
                     <figure class="work-item exterior">
-                        <a href="assets/img/portfolio/full/portfolio_3.jpg" data-size="1156x768">
+                        <a href="<?php echo get_template_directory_uri(); ?>/assets/img/portfolio/full/portfolio_3.jpg" data-size="1156x768">
                             <div class="work-wrapper">
-                                <img src="assets/img/portfolio/thumbs/3.jpg" alt="">
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/portfolio/thumbs/3.jpg" alt="">
                                 <div class="work-overlay">
                                     <div class="work-caption">
                                         <h6 class="work-title">Front Exterior</h6>
@@ -286,9 +286,9 @@
                         <figcaption itemprop="caption description"></figcaption>
                     </figure>
                     <figure class="work-item interior">
-                        <a href="assets/img/portfolio/full/portfolio_4.jpg" data-size="1156x768">
+                        <a href="<?php echo get_template_directory_uri(); ?>/assets/img/portfolio/full/portfolio_4.jpg" data-size="1156x768">
                             <div class="work-wrapper">
-                                <img src="assets/img/portfolio/thumbs/4.jpg" alt="">
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/portfolio/thumbs/4.jpg" alt="">
                                 <div class="work-overlay">
                                     <div class="work-caption">
                                         <h6 class="work-title">Kitchen</h6>
@@ -300,9 +300,9 @@
                         <figcaption itemprop="caption description"></figcaption>
                     </figure>
                     <figure class="work-item interior">
-                        <a href="assets/img/portfolio/full/portfolio_5.jpg" data-size="1156x768">
+                        <a href="<?php echo get_template_directory_uri(); ?>/assets/img/portfolio/full/portfolio_5.jpg" data-size="1156x768">
                             <div class="work-wrapper">
-                                <img src="assets/img/portfolio/thumbs/5.jpg" alt="">
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/portfolio/thumbs/5.jpg" alt="">
                                 <div class="work-overlay">
                                     <div class="work-caption">
                                         <h6 class="work-title">Ensuite</h6>
@@ -314,9 +314,9 @@
                         <figcaption itemprop="caption description"></figcaption>
                     </figure>
                     <figure class="work-item exterior">
-                        <a href="assets/img/portfolio/full/portfolio_6.jpg" data-size="1156x768">
+                        <a href="<?php echo get_template_directory_uri(); ?>/assets/img/portfolio/full/portfolio_6.jpg" data-size="1156x768">
                             <div class="work-wrapper">
-                                <img src="assets/img/portfolio/thumbs/6.jpg" alt="">
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/portfolio/thumbs/6.jpg" alt="">
                                 <div class="work-overlay">
                                     <div class="work-caption">
                                         <h6 class="work-title">Front Exterior</h6>
@@ -328,9 +328,9 @@
                         <figcaption itemprop="caption description"></figcaption>
                     </figure>
                     <figure class="work-item interior">
-                        <a href="assets/img/portfolio/full/portfolio_7.jpg" data-size="1156x768">
+                        <a href="<?php echo get_template_directory_uri(); ?>/assets/img/portfolio/full/portfolio_7.jpg" data-size="1156x768">
                             <div class="work-wrapper">
-                                <img src="assets/img/portfolio/thumbs/7.jpg" alt="">
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/portfolio/thumbs/7.jpg" alt="">
                                 <div class="work-overlay">
                                     <div class="work-caption">
                                         <h6 class="work-title">Master Bedroom</h6>
@@ -342,9 +342,9 @@
                         <figcaption itemprop="caption description"></figcaption>
                     </figure>
                     <figure class="work-item interior">
-                        <a href="assets/img/portfolio/full/portfolio_8.jpg" data-size="1156x768">
+                        <a href="<?php echo get_template_directory_uri(); ?>/assets/img/portfolio/full/portfolio_8.jpg" data-size="1156x768">
                             <div class="work-wrapper">
-                                <img src="assets/img/portfolio/thumbs/8.jpg" alt="">
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/portfolio/thumbs/8.jpg" alt="">
                                 <div class="work-overlay">
                                     <div class="work-caption">
                                         <h6 class="work-title">Living Room</h6>
@@ -356,9 +356,9 @@
                         <figcaption itemprop="caption description"></figcaption>
                     </figure>
                     <figure class="work-item twilight">
-                        <a href="assets/img/portfolio/full/portfolio_9.jpg" data-size="1156x768">
+                        <a href="<?php echo get_template_directory_uri(); ?>/assets/img/portfolio/full/portfolio_9.jpg" data-size="1156x768">
                             <div class="work-wrapper">
-                                <img src="assets/img/portfolio/thumbs/9.jpg" alt="">
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/portfolio/thumbs/9.jpg" alt="">
                                 <div class="work-overlay">
                                     <div class="work-caption">
                                         <h6 class="work-title">Exterior</h6>
@@ -370,9 +370,9 @@
                         <figcaption itemprop="caption description"></figcaption>
                     </figure>
                     <figure class="work-item interior">
-                        <a href="assets/img/portfolio/full/portfolio_10.jpg" data-size="1156x768">
+                        <a href="<?php echo get_template_directory_uri(); ?>/assets/img/portfolio/full/portfolio_10.jpg" data-size="1156x768">
                             <div class="work-wrapper">
-                                <img src="assets/img/portfolio/thumbs/10.jpg" alt="">
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/portfolio/thumbs/10.jpg" alt="">
                                 <div class="work-overlay">
                                     <div class="work-caption">
                                         <h6 class="work-title">Living Room</h6>
@@ -384,9 +384,9 @@
                         <figcaption itemprop="caption description"></figcaption>
                     </figure>
                     <figure class="work-item twilight">
-                        <a href="assets/img/portfolio/full/portfolio_11.jpg" data-size="1156x768">
+                        <a href="<?php echo get_template_directory_uri(); ?>/assets/img/portfolio/full/portfolio_11.jpg" data-size="1156x768">
                             <div class="work-wrapper">
-                                <img src="assets/img/portfolio/thumbs/11.jpg" alt="">
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/portfolio/thumbs/11.jpg" alt="">
                                 <div class="work-overlay">
                                     <div class="work-caption">
                                         <h6 class="work-title">Exterior</h6>
@@ -398,9 +398,9 @@
                         <figcaption itemprop="caption description"></figcaption>
                     </figure>
                     <figure class="work-item interior">
-                        <a href="assets/img/portfolio/full/portfolio_12.jpg" data-size="1156x768">
+                        <a href="<?php echo get_template_directory_uri(); ?>/assets/img/portfolio/full/portfolio_12.jpg" data-size="1156x768">
                             <div class="work-wrapper">
-                                <img src="assets/img/portfolio/thumbs/12.jpg" alt="">
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/portfolio/thumbs/12.jpg" alt="">
                                 <div class="work-overlay">
                                     <div class="work-caption">
                                         <h6 class="work-title">Detail Shot</h6>
@@ -420,7 +420,7 @@
         <!-- END PORTFOLIO -->
 
         <!-- TESTIMONIALS -->
-        <section id="testimonials" section class="module bg-brand-alfa-60 parallax color-white" data-background="assets/img/testimonials.jpg">
+        <section id="testimonials" section class="module bg-brand-alfa-60 parallax color-white" data-background="<?php echo get_template_directory_uri(); ?>/assets/img/testimonials.jpg">
             <div class="container">
 
                 <div class="row">
@@ -431,7 +431,7 @@
                             <!-- TESTIMONIAL -->
                             <div>
                                 <div class="testimonial-image">
-                                    <img src="assets/img/testimonials/1.jpg" alt="">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/testimonials/1.jpg" alt="">
                                     <div class="cd-author-info">
                                         <h5 class="text-700 m-0">Vesna Kolenc</h5>
                                         Re/Max Premier
@@ -446,7 +446,7 @@
                             <!-- TESTIMONIAL -->
                             <div>
                                 <div class="testimonial-image">
-                                    <img src="assets/img/testimonials/2.jpg" alt="">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/testimonials/2.jpg" alt="">
                                     <div class="cd-author-info">
                                         <h5 class="text-700 m-0">Basso DiCesare</h5>
                                         Source 4 Realty
@@ -461,7 +461,7 @@
                             <!-- TESTIMONIAL -->
                             <div>
                                 <div class="testimonial-image">
-                                    <img src="assets/img/testimonials/3.jpg" alt="">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/testimonials/3.jpg" alt="">
                                     <div class="cd-author-info">
                                         <h5 class="text-700 m-0">Marcus Kollmann</h5>
                                         Century 21 Associates Inc Brokerage
@@ -476,7 +476,7 @@
                             <!-- TESTIMONIAL -->
                             <div>
                                 <div class="testimonial-image">
-                                    <img src="assets/img/testimonials/4.jpg" alt="">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/testimonials/4.jpg" alt="">
                                     <div class="cd-author-info">
                                         <h5 class="text-700 m-0">Luciano Corona</h5>
                                         Royal LePage Maximum Realty

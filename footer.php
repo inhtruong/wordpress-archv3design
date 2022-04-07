@@ -42,7 +42,7 @@
                             <ul class="recent-posts">
                                 <li>
                                     <div class="widget-posts-image">
-                                        <a href="http://www.tours.imagepromedia.ca/15vedetteway/"><img src="assets/img/recent/1.jpg" alt=""></a>
+                                        <a href="http://www.tours.imagepromedia.ca/15vedetteway/"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/recent/1.jpg" alt=""></a>
                                     </div>
                                     <div class="widget-posts-body">
                                         <h6 class="widget-posts-title"><a href="http://www.tours.imagepromedia.ca/15vedetteway//">15 Vedette Way</a></h6>
@@ -51,7 +51,7 @@
                                 </li>
                                 <li>
                                     <div class="widget-posts-image">
-                                        <a href="http://www.tours.imagepromedia.ca/112lindberghdrive/"><img src="assets/img/recent/2.jpg" alt=""></a>
+                                        <a href="http://www.tours.imagepromedia.ca/112lindberghdrive/"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/recent/2.jpg" alt=""></a>
                                     </div>
                                     <div class="widget-posts-body">
                                         <h6 class="widget-posts-title"><a href="http://www.tours.imagepromedia.ca/112lindberghdrive/">112 Lindbergh Drive</a></h6>
@@ -60,7 +60,7 @@
                                 </li>
                                 <li>
                                     <div class="widget-posts-image">
-                                        <a href="http://www.tours.imagepromedia.ca/70belsitecourt/"><img src="assets/img/recent/3.jpg" alt=""></a>
+                                        <a href="http://www.tours.imagepromedia.ca/70belsitecourt/"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/recent/3.jpg" alt=""></a>
                                     </div>
                                     <div class="widget-posts-body">
                                         <h6 class="widget-posts-title"><a href="http://www.tours.imagepromedia.ca/70belsitecourt/">70 Belsite Court</a></h6>
@@ -171,6 +171,28 @@
 
     <!-- JAVASCRIPT FILES -->
     <?php wp_footer(); ?>
+
+    <!-- Core CSS file -->
+
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/dist/photoswipe.css">
+
+    <!-- Skin CSS file (styling of UI - buttons, caption, etc.)
+
+        In the folder of skin CSS file there are also:
+
+        - .png and .svg icons sprite, 
+
+        - preloader.gif (for browsers that do not support CSS animations) -->
+
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/dist/default-skin/default-skin.css">
+
+    <!-- Core JS file --> 
+
+    <script src="<?php echo get_template_directory_uri(); ?>/dist/photoswipe.min.js"></script> 
+
+    <!-- UI JS file --> 
+
+    <script src="<?php echo get_template_directory_uri(); ?>/dist/photoswipe-ui-default.min.js"></script> 
 
     <script type="text/javascript">
         var initPhotoSwipeFromDOM = function(gallerySelector) {
