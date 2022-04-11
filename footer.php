@@ -5,14 +5,9 @@
                 <div class="row">
 
                     <!--  -->
-                    <div class="col-sm-3">
+                    <div class="col-sm-4">
                         <div class="widget">
-                            <div class="counter p-0 m-b-30">
-                                <h2 class="montserrat m-b-5">
-                                    <span class="counter-timer" data-from="0" data-to="1532680">0</span>
-                                </h2>
-                                <h5>Total Images Taken</h5>
-                            </div>
+                            <h6 class="montserrat text-uppercase bottom-line">Follow Us</h6>
                             <p></p>
 
                             <ul class="social-icons social-icons-round">
@@ -26,17 +21,17 @@
                     <!--  -->
 
                     <!-- TWITTER WIDGET -->
-                    <div class="col-sm-3">
+                    <!-- <div class="col-sm-3">
                         <div class="widget">
                             <h6 class="montserrat text-uppercase bottom-line">Latest Tweets</h6>
                             <a class="twitter-timeline" data-height="250" data-chrome="transparent" data-theme="dark" href="https://twitter.com/imagepromedia">Tweets by @imagepromedia</a>
                             <script async src="http://platform.twitter.com/widgets.js" charset="utf-8"></script>
                         </div>
-                    </div>
+                    </div> -->
                     <!-- END TWITTER WIDGET -->
 
                     <!-- RECENT POSTS WIDGET -->
-                    <div class="col-sm-3">
+                    <div class="col-sm-4">
                         <div class="widget">
                             <h6 class="montserrat text-uppercase bottom-line">Recent Listings</h6>
                             <ul class="recent-posts">
@@ -73,14 +68,19 @@
                     <!-- END RECENT POSTS WIDGET -->
 
                     <!-- CONTACT WIDGET -->
-                    <div class="col-sm-3">
+                    <div class="col-sm-4">
                         <div class="widget">
-                            <h6 class="montserrat text-uppercase bottom-line">Location</h6>
+                            <h6 class="montserrat text-uppercase bottom-line">Contact</h6>
                             <address class="map-background">
-								<p>Anywhere you need us in the Greater<br>
-								Toronto Area and beyond</p>
-								E-mail: <a href="mailto:admin@imagepromedia.ca">admin@imagepromedia.ca</a>
-								Phone: 416.508.2960
+                                <p>
+                                    <i class="fa-solid fa-location-dot"></i> <span style="margin-left: 10px">Lorem ipsum dolor</span> 
+                                </p>
+                                <p>
+                                    <i class="fa-solid fa-phone"></i> <span style="margin-left: 10px">Lorem ipsum dolor</span>
+                                </p>
+                                <p>
+                                <i class="fa-solid fa-envelope"></i> <span style="margin-left: 10px">Lorem ipsum dolor</span>
+                                </p>
 							</address>
                         </div>
                     </div>

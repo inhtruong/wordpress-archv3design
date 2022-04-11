@@ -35,6 +35,10 @@
             border-radius: 50% !important;
         }
 
+        .comment-reply-title, .comment-notes, .comment-form-cookies-consent {
+            display: none;
+        }
+
         @media only screen and (max-width: 1100px) {
             #portfolio {
                 margin-bottom: 100px !important;
