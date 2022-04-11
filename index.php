@@ -375,43 +375,9 @@
 
                     <div class="col-sm-8 col-sm-offset-2">
 
-                        <?php 
-                            comment_form( array(
-                                'fields'    => array(
-                                    'author'    => '<div class="row">
-                                                        <div class="col-md-6 form-group">
-                                                            <label class="sr-only">First Name</label>
-                                                            <input type="text" class="form-control input-lg" name="author" placeholder="First Name" value="" required>
-                                                            <p class="help-block text-danger"></p>
-                                                        </div>
-
-                                                    <div class="col-md-6 form-group">
-                                                        <label class="sr-only">Last Name</label>
-                                                        <input type="text" class="form-control input-lg" name="lastname" placeholder="Last Name" value="" required>
-                                                        <p class="help-block text-danger"></p>
-                                                    </div>',
-                                    'email'     =>  '<div class="col-md-12 form-group">
-                                                        <label class="sr-only">E-mail Address</label>
-                                                        <input type="email" class="form-control input-lg" name="email" placeholder="E-mail Address" value="" required>
-                                                        <p class="help-block text-danger"></p>
-                                                    </div>',
-                                ),
-                                'comment_field' => '<div class="col-md-12 form-group">
-                                                        <textarea class="form-control input-lg" rows="7" name="comment" placeholder="Message*" required></textarea>
-                                                        <p class="help-block text-danger"></p>
-                                                    </div>',
-                                'id_form'       =>  'contact-form',
-                                'submit_button' =>  '<div class="col-md-12 text-center">
-                                                        <button type="submit" class="btn btn-lg btn-round btn-dark">'
-                                                        .__('Send Email','wkt').
-                                                        '</button>
-                                                    </div></div>',
-                                
-                            ));
+                        <?php
+                            echo do_shortcode('[wpforms id="151"]');
                         ?>
-                        <!-- Ajax response -->
-                        <div id="contact-response" class="ajax-response text-center"></div>
-
                     </div>
 
                 </div>
