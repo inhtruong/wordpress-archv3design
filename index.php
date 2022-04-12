@@ -250,23 +250,20 @@
                                 the_post();
                     ?>
                     <figure class="work-item interior">
-                        <!-- <a href="<?php echo get_template_directory_uri(); ?>/assets/img/portfolio/full/portfolio_1.jpg" data-size="1156x768"> -->
-                            <div class="work-wrapper">
-                                <!-- <img src="<?php echo get_template_directory_uri(); ?>/assets/img/portfolio/thumbs/1.jpg" alt=""> -->
-                                <?php
-                                    the_post_thumbnail( 'grid_post_thumbnail', array(
-                                        'alt'	=> get_post_meta( get_post_thumbnail_id(get_the_ID()),
-                                        '_wp_attachment_image_alt', true)
-                                    ) );
-                                ?>
-                                <div class="work-overlay">
-                                    <div class="work-caption">
-                                        <h6 class="work-title"><?php the_title(); ?></h6>
-                                        <span class="work-category"><?php wkt_post_excerpt(10, get_the_ID()); ?></span>
-                                    </div>
+                        <div class="work-wrapper">
+                            <?php
+                                the_post_thumbnail( 'grid_post_thumbnail', array(
+                                    'alt'	=> get_post_meta( get_post_thumbnail_id(get_the_ID()),
+                                    '_wp_attachment_image_alt', true)
+                                ) );
+                            ?>
+                            <div class="work-overlay">
+                                <div class="work-caption">
+                                    <h6 class="work-title"><?php the_title(); ?></h6>
+                                    <span class="work-category"><?php wkt_post_excerpt(10, get_the_ID()); ?></span>
                                 </div>
                             </div>
-                        <!-- </a> -->
+                        </div>
                         <figcaption itemprop="caption description"></figcaption>
                     </figure>
                     <?php
@@ -274,160 +271,6 @@
                         endif;
                     ?>
 
-                    <!-- <figure class="work-item interior">
-                        <a href="<?php echo get_template_directory_uri(); ?>/assets/img/portfolio/full/portfolio_2.jpg" data-size="1156x768">
-                            <div class="work-wrapper">
-                                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/portfolio/thumbs/2.jpg" alt="">
-                                <div class="work-overlay">
-                                    <div class="work-caption">
-                                        <h6 class="work-title">Living Room</h6>
-                                        <span class="work-category">Interior</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                        <figcaption itemprop="caption description"></figcaption>
-                    </figure>
-                    <figure class="work-item exterior">
-                        <a href="<?php echo get_template_directory_uri(); ?>/assets/img/portfolio/full/portfolio_3.jpg" data-size="1156x768">
-                            <div class="work-wrapper">
-                                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/portfolio/thumbs/3.jpg" alt="">
-                                <div class="work-overlay">
-                                    <div class="work-caption">
-                                        <h6 class="work-title">Front Exterior</h6>
-                                        <span class="work-category">Exterior</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                        <figcaption itemprop="caption description"></figcaption>
-                    </figure>
-                    <figure class="work-item interior">
-                        <a href="<?php echo get_template_directory_uri(); ?>/assets/img/portfolio/full/portfolio_4.jpg" data-size="1156x768">
-                            <div class="work-wrapper">
-                                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/portfolio/thumbs/4.jpg" alt="">
-                                <div class="work-overlay">
-                                    <div class="work-caption">
-                                        <h6 class="work-title">Kitchen</h6>
-                                        <span class="work-category">Interior</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                        <figcaption itemprop="caption description"></figcaption>
-                    </figure> -->
-                    <!-- <figure class="work-item interior">
-                        <a href="<?php echo get_template_directory_uri(); ?>/assets/img/portfolio/full/portfolio_5.jpg" data-size="1156x768">
-                            <div class="work-wrapper">
-                                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/portfolio/thumbs/5.jpg" alt="">
-                                <div class="work-overlay">
-                                    <div class="work-caption">
-                                        <h6 class="work-title">Ensuite</h6>
-                                        <span class="work-category">Interior</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                        <figcaption itemprop="caption description"></figcaption>
-                    </figure>
-                    <figure class="work-item exterior">
-                        <a href="<?php echo get_template_directory_uri(); ?>/assets/img/portfolio/full/portfolio_6.jpg" data-size="1156x768">
-                            <div class="work-wrapper">
-                                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/portfolio/thumbs/6.jpg" alt="">
-                                <div class="work-overlay">
-                                    <div class="work-caption">
-                                        <h6 class="work-title">Front Exterior</h6>
-                                        <span class="work-category">Exterior</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                        <figcaption itemprop="caption description"></figcaption>
-                    </figure>
-                    <figure class="work-item interior">
-                        <a href="<?php echo get_template_directory_uri(); ?>/assets/img/portfolio/full/portfolio_7.jpg" data-size="1156x768">
-                            <div class="work-wrapper">
-                                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/portfolio/thumbs/7.jpg" alt="">
-                                <div class="work-overlay">
-                                    <div class="work-caption">
-                                        <h6 class="work-title">Master Bedroom</h6>
-                                        <span class="work-category">Interior</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                        <figcaption itemprop="caption description"></figcaption>
-                    </figure>
-                    <figure class="work-item interior">
-                        <a href="<?php echo get_template_directory_uri(); ?>/assets/img/portfolio/full/portfolio_8.jpg" data-size="1156x768">
-                            <div class="work-wrapper">
-                                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/portfolio/thumbs/8.jpg" alt="">
-                                <div class="work-overlay">
-                                    <div class="work-caption">
-                                        <h6 class="work-title">Living Room</h6>
-                                        <span class="work-category">Interior</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                        <figcaption itemprop="caption description"></figcaption>
-                    </figure>
-                    <figure class="work-item twilight">
-                        <a href="<?php echo get_template_directory_uri(); ?>/assets/img/portfolio/full/portfolio_9.jpg" data-size="1156x768">
-                            <div class="work-wrapper">
-                                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/portfolio/thumbs/9.jpg" alt="">
-                                <div class="work-overlay">
-                                    <div class="work-caption">
-                                        <h6 class="work-title">Exterior</h6>
-                                        <span class="work-category">Twilight</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                        <figcaption itemprop="caption description"></figcaption>
-                    </figure>
-                    <figure class="work-item interior">
-                        <a href="<?php echo get_template_directory_uri(); ?>/assets/img/portfolio/full/portfolio_10.jpg" data-size="1156x768">
-                            <div class="work-wrapper">
-                                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/portfolio/thumbs/10.jpg" alt="">
-                                <div class="work-overlay">
-                                    <div class="work-caption">
-                                        <h6 class="work-title">Living Room</h6>
-                                        <span class="work-category">Interior</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                        <figcaption itemprop="caption description"></figcaption>
-                    </figure>
-                    <figure class="work-item twilight">
-                        <a href="<?php echo get_template_directory_uri(); ?>/assets/img/portfolio/full/portfolio_11.jpg" data-size="1156x768">
-                            <div class="work-wrapper">
-                                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/portfolio/thumbs/11.jpg" alt="">
-                                <div class="work-overlay">
-                                    <div class="work-caption">
-                                        <h6 class="work-title">Exterior</h6>
-                                        <span class="work-category">Twilight</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                        <figcaption itemprop="caption description"></figcaption>
-                    </figure>
-                    <figure class="work-item interior">
-                        <a href="<?php echo get_template_directory_uri(); ?>/assets/img/portfolio/full/portfolio_12.jpg" data-size="1156x768">
-                            <div class="work-wrapper">
-                                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/portfolio/thumbs/12.jpg" alt="">
-                                <div class="work-overlay">
-                                    <div class="work-caption">
-                                        <h6 class="work-title">Detail Shot</h6>
-                                        <span class="work-category">Interior</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                        <figcaption itemprop="caption description"></figcaption>
-                    </figure> -->
                 </div>
                 <!-- END WORKS GRID -->
 
