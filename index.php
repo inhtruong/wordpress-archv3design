@@ -228,9 +228,9 @@
                     <div class="col-sm-12">
                         <ul id="filters" class="filters">
                             <li><a href="#" class="current" data-filter="*">All</a></li>
-                            <li><a href="#" data-filter=".interior">Interior</a></li>
-                            <li><a href="#" data-filter=".exterior">Exterior</a></li>
-                            <li><a href="#" data-filter=".twilight">Twilight</a></li>
+                            <li><a href="#" data-filter=".tag-interior">Interior</a></li>
+                            <li><a href="#" data-filter=".tag-exterior">Exterior</a></li>
+                            <li><a href="#" data-filter=".tag-twilight">Twilight</a></li>
                         </ul>
                     </div>
                 </div>
@@ -249,28 +249,28 @@
                             while(have_posts(  )):
                                 the_post();
                     ?>
-                    <figure class="work-item interior">
-                        <div class="work-wrapper">
-                            <?php
-                                the_post_thumbnail( 'grid_post_thumbnail', array(
-                                    'alt'	=> get_post_meta( get_post_thumbnail_id(get_the_ID()),
-                                    '_wp_attachment_image_alt', true)
-                                ) );
-                            ?>
-                            <div class="work-overlay">
-                                <div class="work-caption">
-                                    <h6 class="work-title"><?php the_title(); ?></h6>
-                                    <span class="work-category"><?php wkt_post_excerpt(10, get_the_ID()); ?></span>
+                    <figure style="margin-bottom: 0 !important;" <?php post_class( $class = 'work-item', $post_id = get_the_ID() ) ?>>
+                            <div class="work-wrapper">
+                                <?php
+                                    the_post_thumbnail( '', array(
+                                        'alt'	=> get_post_meta( get_post_thumbnail_id(get_the_ID()),
+                                        '_wp_attachment_image_alt', true)
+                                    ) );
+                                ?>
+                                <div class="work-overlay">
+                                    <div class="work-caption">
+                                        <h6 class="work-title"><?php the_title(); ?></h6>
+                                        <span class="work-category"><?php wkt_post_excerpt(10, get_the_ID()); ?></span>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
                         <figcaption itemprop="caption description"></figcaption>
                     </figure>
                     <?php
                             endwhile;
                         endif;
                     ?>
-
+                    
                 </div>
                 <!-- END WORKS GRID -->
 
@@ -375,42 +375,9 @@
 
                     <div class="col-sm-8 col-sm-offset-2">
 
-                        <form id="contact-form" method="post" novalidate>
-                            <div class="row">
-
-                                <div class="col-md-6 form-group">
-                                    <label class="sr-only">First Name</label>
-                                    <input type="text" class="form-control input-lg" name="name" placeholder="First Name" value="" required>
-                                    <p class="help-block text-danger"></p>
-                                </div>
-
-                                <div class="col-md-6 form-group">
-                                    <label class="sr-only">Last Name</label>
-                                    <input type="text" class="form-control input-lg" name="lastname" placeholder="Last Name" value="" required>
-                                    <p class="help-block text-danger"></p>
-                                </div>
-
-                                <div class="col-md-12 form-group">
-                                    <label class="sr-only">E-mail Address</label>
-                                    <input type="email" class="form-control input-lg" name="email" placeholder="E-mail Address" value="" required>
-                                    <p class="help-block text-danger"></p>
-                                </div>
-
-                                <div class="col-md-12 form-group">
-                                    <textarea class="form-control input-lg" rows="7" name="message" placeholder="Message*" required></textarea>
-                                    <p class="help-block text-danger"></p>
-                                </div>
-
-                                <div class="col-md-12 text-center">
-                                    <button type="submit" class="btn btn-lg btn-round btn-dark">Send Email</button>
-                                </div>
-
-                            </div>
-                            <!-- .row -->
-                        </form>
-                        <!-- Ajax response -->
-                        <div id="contact-response" class="ajax-response text-center"></div>
-
+                        <?php
+                            echo do_shortcode('[wpforms id="151"]');
+                        ?>
                     </div>
 
                 </div>
