@@ -35,33 +35,42 @@
                         <div class="widget">
                             <h6 class="montserrat text-uppercase bottom-line">Recent Listings</h6>
                             <ul class="recent-posts">
-                                <li>
+                                <?php query_posts( array(
+                                    'posts_per_page' => 3
+                                )); ?>
+
+                                <?php if( have_posts() ): 
+                                    while ( have_posts() ): 
+                                        the_post(); 
+                                ?>
+
+                                <li>        
                                     <div class="widget-posts-image">
-                                        <a href="http://www.tours.imagepromedia.ca/15vedetteway/"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/recent/1.jpg" alt=""></a>
+                                        <a href="http://www.tours.imagepromedia.ca/15vedetteway/">
+                                        <?php
+                                            the_post_thumbnail( '', array(
+                                                'alt'	=> get_post_meta( get_post_thumbnail_id(get_the_ID()),
+                                                '_wp_attachment_image_alt', true)
+                                            ) );
+                                        ?>
+                                        </a>
                                     </div>
                                     <div class="widget-posts-body">
-                                        <h6 class="widget-posts-title"><a href="http://www.tours.imagepromedia.ca/15vedetteway//">15 Vedette Way</a></h6>
-                                        <div class="widget-posts-meta">January, 2020</div>
+                                        <h6 class="widget-posts-title"><a href="http://www.tours.imagepromedia.ca/15vedetteway//">
+                                            <?php the_title(); ?>
+                                        </h6>
+                                        <div class="widget-posts-meta">
+                                            <?php the_date(); ?>
+                                        </div>
                                     </div>
                                 </li>
-                                <li>
-                                    <div class="widget-posts-image">
-                                        <a href="http://www.tours.imagepromedia.ca/112lindberghdrive/"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/recent/2.jpg" alt=""></a>
-                                    </div>
-                                    <div class="widget-posts-body">
-                                        <h6 class="widget-posts-title"><a href="http://www.tours.imagepromedia.ca/112lindberghdrive/">112 Lindbergh Drive</a></h6>
-                                        <div class="widget-posts-meta">January, 2020</div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="widget-posts-image">
-                                        <a href="http://www.tours.imagepromedia.ca/70belsitecourt/"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/recent/3.jpg" alt=""></a>
-                                    </div>
-                                    <div class="widget-posts-body">
-                                        <h6 class="widget-posts-title"><a href="http://www.tours.imagepromedia.ca/70belsitecourt/">70 Belsite Court</a></h6>
-                                        <div class="widget-posts-meta">December, 2019</div>
-                                    </div>
-                                </li>
+
+                                    <?php endwhile; ?>
+                                <?php else : ?>
+                                    <p><?php __('No News'); ?></p>
+                                <?php endif; ?>
+                            
+                                
                             </ul>
                         </div>
                     </div>
