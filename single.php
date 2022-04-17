@@ -270,7 +270,6 @@
                             endwhile;
                         endif;
                     ?>
-                    
                 </div>
                 <!-- END WORKS GRID -->
 
